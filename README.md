@@ -12,6 +12,19 @@ npm run build    # 产物在 dist/
 npm run preview  # 预览构建产物
 ```
 
+## 上线
+
+- 线上地址：<https://xu1132.github.io/haoxin-site/>
+- 仓库：<https://github.com/xu1132/haoxin-site>
+- 部署方式：推 `main` 分支 → GitHub Actions（`.github/workflows/deploy.yml`）自动 `npm ci && npm run build` → 上传 `dist` 到 Pages
+- 看构建状态：仓库 Actions 页；Pages 设置：Settings → Pages → Source = GitHub Actions
+
+资源全部用相对路径（`vite.config.ts` 里 `base: './'`，图片走 `asset()` 拼 `import.meta.env.BASE_URL`），
+所以改仓库名、加自定义域名都不用动代码。
+
+换自定义域名的做法：Settings → Pages → Custom domain 填域名，仓库根目录加 `CNAME` 文件（内容就是那行域名），
+再去 DNS 加一条 CNAME 指向 `xu1132.github.io`。
+
 ## 目录
 
 ```

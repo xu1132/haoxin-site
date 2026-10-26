@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://haoxinshutong.com/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://haoxinshutong.com/images/truck.jpg</image:loc>
+      <image:title>浩鑫物业自有清洗吸污一体车实拍</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://haoxinshutong.com/images/work-manhole.jpg</image:loc>
+      <image:title>周口检查井开盖抽污作业现场</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://haoxinshutong.com/images/work-pipe.jpg</image:loc>
+      <image:title>周口主管道高压水射流冲洗</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://haoxinshutong.com/images/work-tank.jpg</image:loc>
+      <image:title>小区污水池抽运外运</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://haoxinshutong.com/images/work-sewer.jpg</image:loc>
+      <image:title>楼前主管返水抢修</image:title>
+    </image:image>
+  </url>
+</urlset>

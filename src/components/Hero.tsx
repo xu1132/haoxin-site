@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
 
           <h1>
-            管道堵了，
+           周口管道疏通，
             <br />
             <mark>一个电话</mark>就有人到。
           </h1>

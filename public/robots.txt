@@ -1,0 +1,46 @@
+# robots.txt —— 周口市浩鑫物业服务有限公司
+# 目标：放行全部搜索引擎与 AI 爬虫。任何一条 Disallow: / 都会让收录工作白做。
+
+User-agent: *
+Allow: /
+
+# 百度 / 文心一言
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-render
+Allow: /
+
+# 字节跳动 / 豆包 / 抖音搜索
+User-agent: Bytespider
+Allow: /
+
+# 头条搜索
+User-agent: ToutiaoSpider
+Allow: /
+
+# 搜狗 / 腾讯元宝
+User-agent: Sogou web spider
+Allow: /
+
+# 360 智脑
+User-agent: 360Spider
+Allow: /
+
+# 夸克 / 通义千问
+User-agent: QuarkSpider
+Allow: /
+
+# 神马 /  UC
+User-agent: YisouSpider
+Allow: /
+
+# 微软 Bing / Copilot
+User-agent: bingbot
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://haoxinshutong.com/sitemap.xml

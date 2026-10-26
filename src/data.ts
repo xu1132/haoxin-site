@@ -1,7 +1,15 @@
 /** 全站文案与数据集中管理，改内容只改这里。 */
 
-/** 图片统一走 BASE_URL，保证发布到 GitHub Pages 的 /<repo>/ 子路径下也能取到 */
-export const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+/** 站点绝对地址，换域名只改 .env.production 里的 VITE_SITE_URL */
+export const SITE_URL = (import.meta.env.VITE_SITE_URL || '/').replace(/\/?$/, '/')
+
+/**
+ * 图片地址。
+ * - 浏览器端走 BASE_URL，保证发布到 GitHub Pages 的 /<repo>/ 子路径下也能取到
+ * - 构建时预渲染（SSR）走绝对 URL，让爬虫/大模型在静态 HTML 里拿到的就是完整地址
+ */
+export const asset = (path: string) =>
+  typeof window === 'undefined' ? `${SITE_URL}${path}` : `${import.meta.env.BASE_URL}${path}`
 
 export const COMPANY = {
   name: '周口市浩鑫物业服务有限公司',
